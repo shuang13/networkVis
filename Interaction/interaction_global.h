@@ -1,0 +1,12 @@
+#ifndef INTERACTION_GLOBAL_H
+#define INTERACTION_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#ifdef INTERACTION_LIB
+# define INTERACTION_EXPORT Q_DECL_EXPORT
+#else
+# define INTERACTION_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // INTERACTION_GLOBAL_H
